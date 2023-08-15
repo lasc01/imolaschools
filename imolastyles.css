@@ -1,0 +1,2896 @@
+body{
+    padding: 0;
+    margin: 0;
+}
+
+/* nav style for imola schools */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins' sans-serif;
+}
+
+body{
+    background: #f2f2f2;
+}
+
+nav{
+    background: #ffffff;
+}
+
+nav::after{
+    content: '';
+    clear: both;
+    display: table;
+}
+
+nav .logo{
+    text-decoration: none;
+    font-size: 27px; 
+    float: left;
+    color: rgb(4, 63, 112);
+    font-size: 27px;
+    font-weight: 600;
+    line-height: 70px;
+    padding-left: 60px;
+
+
+}
+
+nav ul{
+    float: right;
+    list-style: none;
+    margin-right: 40px;
+    position: relative;
+}
+
+nav ul li{
+    float: left;
+    display: inline-block;
+    background: rgb(2, 8, 95);
+    margin: 20px 5px;
+}
+
+nav ul li a{
+    color: white;
+    text-decoration: none;
+    line-height: 20px;
+    font-size: 18px;
+    padding: 8px 15px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+nav ul li a:hover{
+    color: cyan;
+    border-radius: 5px;
+    box-shadow: 0 0 5px #338bff,
+                0 0 5px #66ffff;
+}
+
+nav ul ul li a:hover{
+    color: cyan;
+    box-shadow: none;
+}
+
+nav ul ul{
+    position: absolute;
+    top: 57px;
+    opacity: 0;
+    visibility: hidden;
+}
+
+nav ul li:hover > ul{
+    opacity: 1;
+    visibility: visible;
+}
+
+nav ul ul li{
+    position: relative;
+    z-index: 1;
+    margin: 0;
+    width: 150px;
+    float: none;
+    display: list-item;
+    border-bottom: 1px solid whitesmoke;
+}
+
+nav ul ul li a{
+    line-height: 30px;
+}
+
+nav ul ul ul li{
+    position: relative;
+    top: -70px;
+    left: 150px;
+}
+
+.fa-plus{
+    margin-left: 40px;
+    display: none;
+}
+
+.show,.icon,input{
+    display: none;
+}
+
+
+
+/* styling of the first section begins here */
+
+#school-image{
+    background-image: url('./imola schools/schoolbg.jpg')
+    height: 100px;
+    background-size: cover;
+    background-position: center;
+    opacity: 0.4;
+}
+
+#school-image img{
+    width: 100%;
+    height: 350px;
+    background-size: cover;
+    opacity: 0.7;
+    margin-bottom: 0;
+}
+
+.school-name{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-size: 56px;
+    font-weight: 500;
+    align-items: center;
+    text-align: center;
+    margin-top: 100px;
+}
+
+.school-name p {
+    color: rgb(255, 255, 255);
+    text-align: center;
+    font-size: 25px;
+    margin-top: 0;
+}
+
+.school-name a{
+    color: whitesmoke;
+    text-decoration: none;
+    font-size: 56px;
+    font-weight: 800;
+    text-align: center;
+  
+}
+
+.school-namecon {
+    background: black;
+    margin-bottom: 0;
+    
+}
+
+.school-name {
+    position: absolute;
+    top: 100px;
+    left: 500px;
+}
+
+
+
+
+
+
+/* this is the begining of the slide */
+
+.carousel {
+    width: 80vw;
+    height: 650px;
+    border-radius: 7px;
+    overflow: hidden;
+    position: relative;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
+    margin-top: 50px;
+    margin-bottom: 50px;
+    margin-left: 10%;
+    }
+
+    .carousel:hover .controls {
+        opacity: 1;}
+
+        .carousel-ids{
+            width: 80vw;
+            height: 400px;
+            border-radius: 7px;
+            overflow: hidden;
+            position: relative;
+            box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
+            margin-top: 20px;
+            margin-bottom: 50px;
+            }
+        
+            .carousel-ids:hover .controls {
+                opacity: 1;}    
+    
+.controls {
+      opacity: 0;
+      display: flex;
+      position: absolute;
+      top: 50%;
+      left: 0;
+      justify-content: space-between;
+      width: 100%;
+      z-index: 99999;
+      transition: all ease 0.5s;
+    
+    }
+      
+.control {
+        margin: 0 5px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 40px;
+        width: 40px;
+        border-radius: 50%;
+        background-color: rgba(255, 255, 255, 0.7);
+        opacity: .5;
+        transition: ease .3s;
+        cursor: pointer;
+    
+    }
+
+    .control:hover {
+        opacity: 1;
+      }
+    
+      .slides {
+        position: absolute;
+        top: 50%;
+        left: 0;
+        transform: translateY(-50%);
+        display: flex;
+        width: 100%;
+        transition: 1s ease-in-out all;
+      }
+        
+        .slide {
+          min-width: 100%;
+          min-height: 250px;
+          height: auto;
+  }
+
+ 
+
+  /* this is the end of the slide */
+
+  /* This is the begining of the founder's and golden jubilee column */
+
+  .founder-con img {
+    max-width: 400px;
+    height: 480px;
+    background-size: cover;
+}
+
+.founder-con{
+    display: grid;
+    grid-template-columns: auto auto ;
+    width: 850px;
+    margin: auto auto;
+    column-gap: 0;
+}
+
+.text-link .text2{
+margin-top: 60px;
+text-decoration: none;
+color: blue;
+}
+
+.text-link{
+    margin-top: -45px;
+    
+}
+
+.founder-text1 a {
+    font-size: 18px;
+    display: block;
+    margin-top: 50px;
+    padding: 0 30px 0 30px;
+}
+
+.founder-text1{
+    background-color: rgb(159, 255, 255);
+    width: 480px;
+    height: 485px;
+}
+
+.cc2 {
+    background-color: rgb(207, 107, 13);
+}
+
+.cc2 a {
+    color: white;
+}
+
+
+
+/* This is the end of the founder's and golden jubilee column */
+
+/* This is for what we offer section */
+.we-offer{
+    text-align: center;
+    margin-top: 100px;
+    margin-bottom: 70px;
+}
+
+.we-offer a {
+    font-size: 32px;
+    font-weight: bold;
+}
+
+
+
+/* This is the colum of what we offer */
+.sv1 img {
+    width: 345px;
+    height: 200px;
+    background-size: cover;
+    min-width: 250px;
+    max-width: 250px;
+}
+
+.our-offer {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    width: 1200px;
+    margin: auto auto;
+    column-gap: 40px;
+    margin-top: 60px;
+    background-color: rgb(255, 255, 255)
+    padding-top: 30px;
+    padding-bottom: -100px;
+}
+
+.our-offer .sv1{
+    margin-left: 20%;
+}
+
+/* this is the column for what we offer text */
+
+.offer-text {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    width: 1200px;
+    height: 205px;
+    margin: auto auto;
+    column-gap: 70px;
+    margin-top: 1px;
+    padding-top: 1px;
+    padding-bottom: 20px;
+}
+
+
+.lv1{
+    width: 345px;
+    height: 220px;
+    background-color: rgb(243, 240, 236);
+    float: left;
+    border: 1px solid black;
+    border-top: none;
+    border-left: 0px;
+    padding: 2px;
+    margin: 5px;
+    margin-top: -5px;
+}
+
+.lv1 h3{
+    text-align: center;
+    color: black
+}
+
+.lv1 h3 {
+    padding-right: 50px;
+    padding-left: 50px;
+    margin-bottom: 15px;
+}
+
+.lv1 p{
+    text-align: center;
+    color: black
+}
+
+.lv1 p {
+    padding-right: 50px;
+    padding-left: 50px;
+}
+
+.lv1 a {
+    text-decoration: none;
+    color: rgb(24, 24, 32);
+    border: 2px solid rgb(8, 8, 20);
+    border-radius: 40px;
+    padding: 10px;
+    margin: 90px
+    
+}
+
+
+
+
+/* this is the end for what we offer column */
+
+/* this is the beginning of the welcome address */
+  .welcome-con .welcome-pic img {
+    width: 370px;
+    height: 350px;
+    background-size: cover;
+    margin-top: 70px;
+}
+
+  .welcome-con{
+    display: grid;
+    grid-template-columns: auto auto ;
+    width: 1200px;
+    margin: auto auto;
+    column-gap: 0px;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    line-height: 1.4;
+} 
+
+.welcome-text h2{
+    font-size: 25px;
+    display: block;
+    padding: 0 30px 0 30px;
+}
+    
+    .welcome-text p {
+        font-size: 16px;
+        display: block;
+        padding: 0 30px 0 30px;
+} 
+    
+    .welcome-text{;
+        width: 800px;
+        height: 485px;
+} 
+
+     
+
+    /* this is the beginning of the vision column */
+    .vision-con{
+        width: 1200px;
+        height: 400px;
+        border: 1px solid rgb(238, 238, 238);
+        border: none;
+        margin: 0 auto;
+        line-height: 1.2;
+    }
+
+    .vision-col{
+        width: 270px;
+        height: 350px;
+        color: whitesmoke;
+        background-color: green;
+        float: left;
+        border: 1px solid black;
+        padding: 40px;
+        margin: 5px;
+        margin-left: 20px;
+    }
+
+    .col1{
+        background-color: cornflowerblue;
+    }
+    .col2{
+        background-color: black
+    }
+    .col3{
+        background-color: purple
+    }
+    .col4{
+        background-color: brown;
+    }
+
+    
+
+ 
+
+    /* this is the design for the footer */
+   .footer-sec{
+       box-sizing: border-box;
+       margin: 0;
+       padding: 0;
+       line-height: 1.5;
+       font-family: 'Poppins', sans-serif;
+   }
+
+   .footer-con{
+       max-width: 1170px;
+       margin: auto;
+   }
+
+   .row{
+       display: flex;
+       flex-wrap: wrap;
+   }
+
+   ul {
+       list-style: none;
+   }
+    
+    .footer-sec{
+        background-color: #001855;
+        padding: 70px 0;
+    }
+
+    .footer-col{
+        width: 25%;
+        padding: 0 1;
+    }
+
+    .footer-col h4{
+        font-size: 18px;
+        color: #ffffff;
+        text-transform: capitalize;
+        margin: 30px;
+        margin-bottom: 35px;
+        font-weight: 500;
+        position: relative;
+        background-color: #1ebae9;;
+    }
+
+.footer-col h4::before{
+        content: '';
+        position: absolute;
+        left: 0;
+        bottom: -10px;
+        background-color: #1ebae9;
+        height: 2px;
+        box-sizing: border-box;
+        width: 50px;
+}
+
+.footer-col ul li:not(:last-child){
+    margin-bottom: 10px;
+}
+
+.footer-col ul li a{
+    font-size: 16px;
+    text-transform: capitalize;
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 300;
+    color: #bbbbbb;
+    display: block;
+    margin-left: 45px;
+}
+
+.footer-col .social-links a:hover{
+  color: #24262b;
+  background-color: whitesmoke;
+  font-size: 16px;
+}
+
+.footer-col .social-links a{
+    font-size: 16px;
+    text-transform: capitalize;
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 300;
+    color: #bbbbbb;
+    display: inline;
+    margin: 10px;
+}
+
+.footer-col .social-links a .twi{
+    color: blue;
+}
+
+.footer-col .social-links{
+    margin-left: 40px;
+}
+
+/* responsiveness */
+
+
+
+
+/* this is the style for the about us general web page */
+.about-con{
+    display: grid;
+    grid-template-columns: auto auto;
+    width: 1200px;
+    height: 405px;
+    margin: auto auto;
+    column-gap: 50px;
+    margin-top: 1px;
+    padding-top: 1px;
+    padding-bottom: 20px
+}
+.about-header{
+    width: 600px;
+    height: 30px;
+    border: 1px solid black;
+    border-left: none;
+    border-right: none;
+    margin: 50px;
+    padding: 10px;
+}
+.about-text{
+    width: 330px;
+    height: 240px;
+    border: 1px solid black;
+    border-top: none;
+    margin: 50px;
+    padding: 10px;
+    text-align: center;
+}
+.about-header h4{
+    text-align: center;
+    font-size: 28px;
+    margin-top: -10px;
+}
+.about-header p{
+    text-align: center;
+    font-size: 28px;
+    margin-top: 0;
+}
+.history-con{
+    width: 750px;
+    height: 610px;
+    border: 1px solid black;
+    margin: 50px;
+    margin-top: -300px;
+    padding: 10px;  
+}
+.history-con h3{
+    text-align: left;
+    font-size: 20px;
+    margin-top: 0;   
+}
+.history-con p{
+    text-align: left;
+    font-size: 18px;
+    margin-top: 0;
+}
+
+
+
+
+/* this is the beginning of the imola day school web page */
+
+
+.bg-image{
+    background-image: url('./imola_schools/primary2.jpg');
+    height: 600px;
+    background-size: cover;
+    background-position: center;
+    opacity: 0.2;
+
+}
+
+#bg-text a {
+    color: white;
+    font-size: 56px;
+    font-weight: 800;
+    text-align: center;
+}
+
+#bg-text p {
+    color: white;
+    text-align: center;
+    font-size: 25px;
+}
+
+
+
+.background-container {
+    background: rgb(0, 0, 0);
+}
+
+#bg-text {
+    width: 50%;
+    position: absolute;
+    top: 300px;
+    left: 350px;
+    justify-content: center;
+    float: center;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-size: 66px;
+    font-weight: 500;
+    align-items: center;
+    text-align: center;
+}
+
+
+
+
+
+/* this is the beginning of the offer column */
+.idsoffer-con{
+    width: 1300px;
+    height: 750px;
+    margin: 0 auto;
+    line-height: 1.2;
+    margin-top: 70px;
+    margin-bottom: 0px;
+    margin-left: 90px;
+}
+
+.first-sec  img {
+    width: 318px;
+    height: 300px;
+    float: left;
+    max-height: 250px;
+    min-height: 250px;
+    object-fit: cover;
+    padding: 40px;
+    margin: 28px;
+}
+
+.first-sec {
+    width: 1300px;
+    padding: 0 30px 0 30px;
+    margin: 10px;
+    margin-left: 65px;
+    margin-bottom: -50px;
+}
+
+.idsoffer-col{
+    width: 260px;
+    height: 260px;
+    color: rgb(230, 223, 130);
+    background-color: rgb(97, 53, 53);
+    float: left;
+    border: 1px solid black;
+    padding: 7px;
+    margin: -40px;
+    margin-left: 155px;
+}
+
+
+
+.code-easy a{
+    font-size: 30px;
+    font-weight: bold;
+}
+
+
+.carousel-ids {
+    width: 80vw;
+    height: 350px;
+    border-radius: 7px;
+    overflow: hidden;
+    position: relative;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
+    margin-top: 50px;
+    margin-bottom: 50px;
+    margin-left: 10%;
+    }
+
+
+
+/* this is the beginning of imolacomprehensive college web page */
+
+.iccbg-image{
+    background-image: url('./imola_schools/icc1.jpg');
+    height: 600px;
+    background-size: cover;
+    background-position: center;
+    opacity: 0.2;
+}
+
+.iccbg-text a {
+    color: white;
+    font-size: 46px;
+    font-weight: 700;
+    text-align: center;
+    margin-left: -100px;
+}
+
+.iccbg-text p {
+    color: white;
+    text-align: center;
+    font-size: 25px;
+    margin-left: -100px;
+}
+
+
+.background-container {
+    background: rgb(0, 0, 0);
+}
+
+.iccbg-text {
+    position: absolute;
+    top: 300px;
+    left: 450px;
+}
+
+
+
+
+/* this is the beginning of the offer column */
+    
+.iccoffer-con{
+    /* width:100%; */
+    height: 750px;
+    margin: 0 auto;
+    line-height: 1.2;
+    margin-top: 70px;
+    margin-bottom: 0px;
+    margin-left: 100px;
+}
+
+.iccfirst-sec img {
+    width: 324px;
+    height: 250px;
+    float: left;
+    max-height: 250px;
+    min-height: 250px;
+    object-fit: cover;
+    padding: 40px;
+    margin: 10px;
+}
+
+.iccfirst-sec {
+    width: 100%;
+    padding: 0 40px 0 30px;
+    margin: 10px;
+    margin-left: 100px;
+    margin-bottom: -50px;
+}
+
+.iccoffer-col{
+    width: 250px;
+    height: 260px;
+    color: rgb(126, 205, 230);
+    background-color: rgb(2, 0, 97);
+    float: left;
+    border: 1px solid black;
+    padding: 12px;
+    margin: -49px -88px;
+    margin-left: 180px;   
+}
+
+.iccoffer-col p{
+    font-size: 14px;
+}
+
+.code-easy{
+    text-align: center;
+    margin-top: -150px;
+    margin-bottom: 80px;
+}
+
+
+
+
+/* This is the beginning of the contact us style. Kindly note note that i used thesame style for the about us for this */
+/* This is the beginning of the management style. Kindly note note that i used thesame style for the about us for this */
+/* This is the beginning of the staffs style. Kindly note note that i used thesame style for the about us for this. The codes below is the continuation because I
+needed to make some adjustments like the expansion of the border, as well as addition of pictures */
+.history-con1{
+    width: 750px;
+    height: 920px;
+    border: 1px solid black;
+    margin: 50px;
+    margin-top: -300px;
+    padding: 10px;  
+}
+.history-con1 h3{
+    text-align: left;
+    font-size: 20px;
+    margin-top: 0;   
+}
+.history-con1 p{
+    text-align: left;
+    font-size: 18px;
+    margin-top: 0;
+}
+.history-con1 p img{
+    width: 650px;
+    height: 350px;
+    background-size: cover;
+}
+
+
+
+
+/* This is the beginning of the achievement style. Kindly note note that i used thesame style for the staffs for this */
+
+/* This is the beginning of the ids admission style. kindly note that i used the same style for the staffs for this also.
+ With the continuation of the styling below */
+ table, th, td{
+    border: 1px solid black;
+}
+ table{
+    border-collapse: collapse;
+     width: 700px;
+ }
+ th{
+     text-align: center;
+ }
+td{
+    height: 50px;
+    vertical-align: center;
+    text-align: left;
+}
+th td{
+    padding: 5px;
+    text-align: center;
+}
+tr:hover{
+    background-color:#a7a3a3;
+}
+ol{
+    list-style-type: lower-roman;
+    margin-left: 15px;
+}
+
+.carousel-adm{
+    width: 450px;
+    height: 270px;
+    border-radius: 7px;
+    overflow: hidden;
+    position: relative;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
+    margin-top: 100px;
+    margin-left: 50px;
+    margin-bottom: 50px;
+    background-size: cover;
+    }
+
+    .carousel-adm:hover .controls {
+        opacity: 0.4;}    
+
+   
+
+/* This is the beginning of the icc admission style. kindly note that i used the same style for the idsadmission for this also.
+ With the continuation of the styling below */
+ .history-con2{
+    width: 800px;
+    height: 840px;
+    border: 1px solid black;
+    margin: 50px;
+    margin-top: -300px;
+    padding: 10px;  
+}
+.history-con2 h3{
+    text-align: left;
+    font-size: 20px;
+    margin-top: 0;   
+}
+.history-con2 p{
+    width: 100%;
+    text-align: left;
+    font-size: 18px;
+    margin-top: 0;
+}
+.history-con2 p img{
+    width: 800px;
+    height: 500px;
+    background-size: cover;
+    margin-left: -10px;
+}
+
+
+
+
+/* This is the beginning of the icc alumni style. kindly note that i used the same style for the achievement for this also.
+ With the continuation of the styling below */
+ /* This is the beginning of the ids alumni style. kindly note that i used the same style for the achievement for this also.
+ With the continuation of the styling below */
+
+ /* This is the beginning of the teachers day. kindly note that i used the same style for the iccadmission for this also.
+ With the continuation of the styling below */
+ .history-con3{
+    width: 750px;
+    height: 920px;
+    border: 1px solid black;
+    margin: 50px;
+    margin-top: -300px;
+    padding: 10px;  
+}
+.history-con3 h3{
+    text-align: left;
+    font-size: 20px;
+    margin-top: 0;   
+}
+.history-con3 p{
+    text-align: left;
+    font-size: 16px;
+    margin-top: 0;
+}
+.history-con3 p img{
+    width: 730px;
+    height: 500px;
+    background-size: cover;
+}
+.carousel-teachers{
+    width: 350px;
+    height: 350px;
+    border-radius: 7px;
+    overflow: hidden;
+    position: relative;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
+    margin-top: 100px;
+    margin-left: 50px;
+    margin-bottom: 50px;
+    background-size: cover;
+    }
+
+    .carousel-teachers:hover .controls {
+        opacity: 0.4;}   
+
+
+
+        /* This is the beginning of the sport week. kindly note that i used the same style for the teachers aday for this also.
+ With the continuation of the styling below */
+
+ .carousel-sport{
+    width: 350px;
+    height: 300px;
+    border-radius: 7px;
+    overflow: hidden;
+    position: relative;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
+    margin-top: 100px;
+    margin-left: 50px;
+    margin-bottom: 50px;
+    background-size: cover;
+    }
+
+    .carousel-teachers:hover .controls {
+        opacity: 0.4;}   
+
+       
+    /* This is the beginning of the christmas week. kindly note that i used the same style for the idsalumni aday for this also.
+ With the continuation of the styling below */
+
+  /* This is the beginning of the prize giving day. kindly note that i used the same style for the idsalumni aday for this also.
+ With the continuation of the styling below */
+
+ /* This is the beginning of the cultural day. kindly note that i used the same style for the sport week for this also.
+ With the continuation of the styling below */
+
+ /* This is the beginning of the fine art practical day. kindly note that i used the same style for the cultural day for this also.
+ With the continuation of the styling below */
+
+ /* This is the beginning of the fine art practical day. kindly note that i used the same style for the cultural day for this also.
+ With the continuation of the styling below */
+
+/* this is the responsiveness of cultural day and creative art day */
+
+ 
+/* This is the beginning of the continue1 html. kindly note that i used the same style for the achievement for this also.
+ With the continuation of the styling below */
+ .history-con13{
+    background-color: rgb(243, 242, 242);
+    width: 750px;
+    height: 920px;
+    border: 1px solid black;
+    margin: 50px;
+    margin-top: -300px;
+    padding: 10px;  
+}
+.history-con13 h3{
+    text-align: left;
+    font-size: 18px;
+    margin-top: 0;   
+}
+.history-con13 p{
+    text-align: left;
+    font-size: 16px;
+    margin-top: 0;
+}
+.history-con13 p img{
+    width: 600px;
+    height: 350px;
+    background-size: cover;
+}
+
+
+
+
+/* This is the beginning of the continue2 html. kindly note that i used the same style for the continue1 for this also.
+ With the continuation of the styling below */
+ .history-con14{
+    width:750px;
+    height: 1020px;
+    border: 1px solid black;
+    margin: 50px;
+    margin-top: -300px;
+    padding: 10px;  
+}
+.history-con14 h3{
+    text-align: left;
+    font-size: 20px;
+    margin-top: 0;   
+}
+.history-con14 p{
+    text-align: left;
+    font-size: 18px;
+    margin-top: 0;
+}
+.history-con14 p img{
+    width: 600px;
+    height: 400px;
+    background-size: cover;
+}
+.history-con14 p a {
+    text-decoration: none;
+    color: blue;
+}
+
+
+
+/* This is the beginning of the knowmore1 html. kindly note that i used the same style for the continue2 for this also.
+ With the continuation of the styling below */
+ .history-con5{
+    width: 750px;
+    height: 970px;
+    border: 1px solid black;
+    margin: 50px;
+    margin-top: -300px;
+    padding: 10px;  
+}
+.history-con5 h3{
+    text-align: left;
+    font-size: 20px;
+    margin-top: 0;   
+}
+.history-con5 p{
+    text-align: left;
+    font-size: 18px;
+    margin-top: 0;
+}
+.history-con5 p img{
+    width: 730px;
+    height: 400px;
+    background-size: cover;
+}
+.history-con5 .ictimages img{
+    width: 300px;
+    height: 200px;
+    background-size: cover;
+    margin-left: 30px;
+}
+
+
+/* this is the responsiveness for know 1,2 and 3 */
+
+
+/* responsiveness */
+
+@media all and (max-width: 968px) {
+    nav {
+        background: #00123f;
+    }
+    nav ul{
+        margin-right: 0px;
+        float: left;
+        display: none;
+    }
+
+    nav ul li{
+        float: left;
+        display: inline-block;
+        background: none;
+        margin: 5px 5px;
+        border-bottom: 1px solid white;
+    }
+
+    nav ul li a{
+        margin-left: 0;
+    }
+
+    nav .logo{
+        color: white;
+        padding-left: 30px;
+        width: 100%;
+    }
+    nav ul li, nav ul ul li{
+        display: flex;
+        width: 100%;
+    }
+
+    nav ul ul{
+        top: 70px;
+        position: static;
+        border-top: none;
+        float: none;
+        display: none;
+        opacity: 1;
+        visibility: visible;
+    }
+
+    nav ul ul li {
+        border-bottom: none;
+    }
+
+    /* nav ul ul li a{ */
+        /* border: 1px solid ; */
+    /* } */
+
+    nav ul ul ul ul li{
+        position: static;
+    }
+
+
+    nav ul ul a{
+        padding-left: 40px;
+    }
+
+    .show{
+        display: block;
+        color: white;
+        font-size: 18px;
+        padding: 0 20px;
+        line-height: 60px;
+        cursor: pointer;
+    }
+
+    .show:hover{
+        color: cyan;
+    }
+
+    .icon{
+        display: block;
+        color: white;
+        position: absolute;
+        right: 40px;
+        line-height: 70px;
+        font-size: 25px;
+        cursor: pointer;
+    }
+
+
+    nav ul li a:hover{
+        box-shadow: none;
+    }
+
+    .show + a, ul{
+        display: none;
+    }
+
+    [id^=btn]:checked + ul{
+        display: block;
+    }
+
+
+    .school-name {
+    width: 100%;
+    left: 15px;
+    font-size: 30px;
+    float: left;
+    position: relative;
+    margin-left: -1000px;
+    }
+    .school-name a{
+   font-size: 35px; 
+    }
+    .school-name p{
+    font-size: 18px;
+    } 
+
+
+    .carousel{
+        top: 0px;
+        width: 80vw;
+        height: 250px;
+    }
+
+
+    .founder-con img{
+        width: 220px;
+        height: 336px;
+    }
+    .founder-con{
+        display: grid;
+        grid-template-columns: auto auto ;
+        width: 390px;
+        margin: auto auto;
+        column-gap: 0;
+        margin-left: 150px;
+    }
+    .founder-text1{
+        width: 270px;
+        height: 340px;
+    }
+    .founder-text1 a{
+        margin-top: 70px;
+        font-size: 10px;
+    }
+
+    
+    .our-offer{
+        grid-template-columns: repeat(2, 1fr);
+        width: 50%;
+        display: inline-block;
+     }
+     .offer-text{
+         width: 700px;
+         grid-template-columns: repeat((2, 1fr));
+         text-align: center;
+         align-items: center;
+         float: center;
+         margin-bottom: -200px;
+     }
+     #sv01{
+        margin-top: -50px;
+        margin-left: 100px;
+    }
+     #lv01{
+         margin-top: -1600px;
+         margin-left: 300px;
+         align-items: center;
+         border-bottom: none;
+         background-color: whitesmoke;
+     }
+ 
+     #sv02{
+         margin-top: 100px;
+         margin-left: 100px;
+     }
+     #lv02{
+         margin-top: -990px;
+         margin-left: -420px; 
+         align-items: center;
+         border-bottom: none;
+         background-color: whitesmoke;
+     }
+ 
+     #sv03{
+         margin-top: 100px;
+         margin-left: 100px;
+     }
+     #lv03{
+         margin-top: -375px;
+         margin-left: -480px;
+         align-items: center;
+         border-bottom: none;
+         background-color: whitesmoke;
+     }
+
+
+     .welcome-con{
+        width: fit-content;
+        display: inline-block;
+        margin-bottom: 50px;
+        margin-top: 200px;
+    }
+    .welcome-text{
+        width: 100%;
+        font-size: 16px;
+        margin-top: -100px;
+        margin-left: 20px;
+    }
+    .welcome-text p{
+        font-size: 18px;
+        line-height: 20px;
+    }
+    .welcome-con .welcome-pic img{
+        width: 250px;
+        height: 220px;
+        margin-left: 20px;
+        margin-top: 20px;
+    }
+    .welcome-text h2{
+        text-align: center;
+    }
+
+
+    .vision-con{
+        width: 600px;
+        margin-bottom: 400px;
+    }
+
+    .footer-col{
+        width: 50%;
+        margin-bottom: 30px;
+    }
+
+
+    .about-con{
+        width: 100%;
+        display: flex;
+        flex-flow: row wrap;
+        text-align: center;
+        margin-top: 100px;
+        margin-bottom: 850px;
+    }
+    .about-header{
+        margin-top: -80px;
+        margin-left: 70px;
+    }
+    .about-text{
+        margin-top: 514px;
+        margin-left: 210px;
+        margin-bottom: -30px;
+    }
+    .history-con{
+        width: 80%;
+        height: 510px;
+        margin-top: -1250px;
+        margin-bottom: 400px;
+    }
+    .history-con p{
+        font-size: 16px;
+    }
+
+
+    /* for ids */
+
+    .bg-image{
+        width: 100%;
+        display: flex;
+        position: relative;
+    }
+
+    /* .bg-image img{
+
+    } */
+    #bg-text{
+        width: 100%;
+        left: 200px;
+        font-size: 15px;
+    }
+    #bg-text p {
+        font-size: 15px;
+        margin-left: -24000px;
+    }
+    #bg-text a {
+        color: white;
+        font-size: 26px;
+        font-weight: 700;
+        text-align: center;
+        margin-left: -10000px;
+    }
+
+    .idsoffer-con{
+        width: 100%;
+        display: flex;
+        flex-flow: row wrap;
+        text-align: center;
+        margin-top: 0px;
+        margin-bottom: 850px;
+    }
+    
+    .idsoffer{
+        margin-top: -500px;
+        margin-left: -60px;
+        width:100%;
+        display: flex;
+        flex-flow: row wrap;
+        text-align: center;
+    }
+    
+    #col04{
+        margin-top: -539px;
+    }
+    #col05{
+        margin-top: -89px;
+    }
+    #col06{
+        margin-top: 131px;
+    }
+    
+    .first-sec img{
+        margin: 50px;
+        width: 74.8%;
+        margin-left: -25px;
+        margin-bottom: 150px;
+    }
+    
+     .idsoffer-col{
+        margin: 80px;
+        width: 52.5%;
+        margin-left: 170px;
+        margin-top: 60px;
+        height: 240px;
+    } 
+
+
+    .code-easy{
+        text-align: center;
+        margin-top: -60px;
+        margin-bottom: 70px;
+    }
+    
+    .code-easy a {
+        font-size: 32px;
+        font-weight: bold;
+    }
+
+
+    .carousel-ids{
+        height: 250px;
+    }
+
+
+    /* for icc */
+
+    .iccbg-image{
+        width: 100%;
+        display: flex;
+        position: relative;
+    }
+
+    .iccbg-text{
+        width: 100%;
+        left: 200px;
+        font-size: 15px;
+    }
+    .iccbg-text p {
+        font-size: 15px;
+        margin-left: -2400px;
+    }
+    .iccbg-text a {
+        color: white;
+        font-size: 26px;
+        font-weight: 700;
+        text-align: center;
+        margin-left: -1000px;
+    }
+
+
+    .iccoffer-con{
+        width: 100%;
+        display: flex;
+        flex-flow: row wrap;
+        text-align: center;
+        margin-top: 0px;
+        margin-bottom: 850px;
+    }
+    
+    .iccoffer{
+        margin-top: -500px;
+        margin-left: -100px;
+        width: 100%;
+        display: flex;
+        flex-flow: row wrap;
+        text-align: center;
+    }
+    
+    #col01{
+        margin-top: -539px;
+        margin-left: -30px;
+    }
+    #col02{
+        margin-top: -89px;
+        margin-left: -30px;
+    }
+    #col03{
+        margin-top: 170px;
+        margin-left: -30px;
+    }
+    
+    .iccfirst-sec img{
+        margin: 50px;
+        width: 80%;
+        margin-left: -100px;
+        margin-bottom: 150px;
+    }
+    
+    .iccoffer{
+        width: 100%;
+        margin-left: 100px;
+    }
+     .iccoffer-col{
+        margin: 80px;
+        width: 59.7%;
+        margin-left: 170px;
+        margin-top: 80px;
+        height: 200px;
+    } 
+
+    #code-easy02{
+        margin-top: -100px;
+    }
+    #code-easy02 a{
+        font-size: 32px;
+    }
+
+
+
+    .about-con1{
+        width: 100%;
+        display: flex;
+        flex-flow: row wrap;
+        text-align: center;
+        margin-top: -100px;
+        margin-bottom: 850px;
+    }
+    .about-header{
+        margin-top: -80px;
+        margin-left: 70px;
+    }
+    .about-text{
+        margin-top: 514px;
+        margin-left: 210px;
+        margin-bottom: -30px;
+    }
+    .history-con1{
+        width: 80%;
+        height: 860px;
+        margin-top: -1250px;
+        margin-bottom: 400px;
+    }
+    .history-con1 p{
+        font-size: 16px;
+    }
+    #about02{
+        margin-top: 864px;
+    }
+
+
+    .carousel-adm{
+        margin-top: 765px;
+        margin-left: 200px;
+    }
+    #history02{
+        height: 760px;
+        margin-left: 100px;
+    }
+    #history02 ol{
+        margin-left: 15px;
+    }
+    table{
+        width: 100%;
+    }
+
+
+
+    .history-con2{
+        width: 95%;
+        height: 840px;
+        margin-left: 10px;
+        margin-top: -1250px;
+        margin-bottom: 300px;
+    }
+    .history-con2 p img{
+        width: 102.3%;
+        height: 457px;
+    }
+   #courasel02{
+       margin-top: 845px;
+       height: 200px;
+   } 
+
+
+   #history03{
+    width: 92%;
+    height: 850px;
+    margin-left: 30px;
+    margin-top: -1250px;
+    margin-bottom: 500px;
+    }
+    .history-con3 p img{
+   width: 100%;
+    }
+    .carousel-teachers{
+    width: 50%;
+    height: 400px;
+    margin-top: 854px;
+    margin-left: 230px;
+    }
+
+
+    #history04{
+        width: 92%;
+        height: 820px;
+        margin-left: 30px;
+        margin-top: -1250px;
+        margin-bottom: 500px;
+    }
+    #history04 p img{
+       width: 100%;
+    }
+    .carousel-sport{
+        width: 50%;
+        height: 400px;
+        margin-top: 824px;
+        margin-left: 200px;
+    }
+
+
+    #history05{
+        width: 92%;
+        height: 820px;
+        margin-left: 30px;
+        margin-top: -1250px;
+        margin-bottom: 400px;
+    }
+    #history05 p img{
+       width: 100%;
+    }
+    #courasel05{
+        width: 50%;
+        height: 280px;
+        margin-top: 824px;
+        margin-left: 200px;
+    }
+
+
+    #history06{
+        width: 92%;
+        height: 820px;
+        margin-left: 30px;
+        margin-top: -1250px;
+        margin-bottom: 400px;
+    }
+    #history06 p img{
+       width: 100%;
+    }
+    #courasel06{
+        width: 50%;
+        height: 280px;
+        margin-top: 824px;
+        margin-left: 200px;
+    }
+
+
+
+    .history-con13{
+        width: 90%;
+        display: flex;
+        flex-flow: row wrap;
+        text-align: center;
+        margin-top: -1300px;
+        margin-bottom: 350px;
+    }
+    #about10{
+        margin-top: 874px;
+        margin-left: 250px;
+        margin-bottom: 30px;
+    }
+    .history-con13 p{
+        width: 100%;
+        font-size: 15.5px;
+        line-height: 1.5;
+    }
+
+
+    .history-con14{
+        background-color:whitesmoke;
+        width: 90%;
+        display: flex;
+        flex-flow: row wrap;
+        text-align: center;
+        margin-top: -1300px;
+        margin-bottom: 350px;
+    }
+    #about11{
+        margin-top: 974px;
+        margin-left: 250px;
+        margin-bottom: 30px;
+    }
+    .history-con14 p{
+        width: 100%;
+        font-size: 15.5px;
+        line-height: 1.5;
+    }
+
+
+    .history-con5{
+        background-color:whitesmoke;
+        width: 90%;
+        display: flex;
+        flex-flow: row wrap;
+        text-align: center;
+        margin-top: -1300px;
+        margin-bottom: 350px;
+    }
+    /* #about11{
+        margin-top: 919px;
+        margin-left: 250px;
+        margin-bottom: 30px;
+    } */
+    .history-con5 p{
+        width: 100%;
+        font-size: 15.5px;
+        line-height: 1.5;
+    }
+    .history-con5 p img{
+        width: 100%;
+    }
+    .history-con5 #ict10 img{
+        width: 40%;
+        margin-left: 40px;
+    }
+    #about12{
+        margin-top: 924px;
+        margin-left: 250px;
+    }
+
+    .history-con5 .ictimages img{
+        width: 40%;
+        margin-left: 40px;
+    }
+    #about13{
+        margin-top: 924px;
+        margin-left: 250px;
+    }
+    #about14{
+        margin-top: 924px;
+        margin-left: 250px;
+    }
+
+
+
+}
+
+
+
+
+@media screen and (max-width: 768px) {
+    .founder-con img{
+        width: 100px;
+        height: 336px;
+    }
+    .founder-con{
+        width: fit-content;
+        display: grid;
+        grid-template-columns: auto auto ;
+        /* width: 340px; */
+        margin: auto auto;
+        column-gap: 0;
+    }
+    .founder-text1{
+        width: 210px;
+        height: 340px;
+    }
+    .founder-text1 a{
+        font-size: 8px;
+
+    }
+
+
+    .we-offer a{
+        font-size: 18px;
+    }
+
+    .our-offer{
+        display: block;
+        width: 300px;
+    }
+     .offer-text{
+         width: fit-content;
+         display: list-item;
+         margin-bottom: 100px;
+    }
+    #lv01{
+        width: fit-content;
+         position: static;
+         margin-top: -1315px;
+         margin-left: 20px;
+         /* border-bottom: 1px solid black */
+    }
+    #sv01{
+         margin-left: 10px;
+    }
+ 
+    #sv02{
+         margin-top: 300px;
+         margin-left: 10px;
+    }
+     #lv02{
+         width: fit-content;
+         margin-top: -810px;
+         margin-left: 20px; 
+         /* border-bottom: 1px solid black */
+    }
+ 
+    #sv03{
+         margin: 300px;
+         margin-left: 30px;
+    }
+    #lv03{
+        width: fit-content;
+         margin-top: -305px;
+         margin-left: 20px;
+         align-items: center;
+         /* border-bottom: 1px solid black */
+    } 
+
+
+    .welcome-con{
+        width: fit-content;
+        margin-top: -120px;
+        padding-left: 30px;
+    }
+
+    .welcome-text{
+        width: 90%;
+        font-size: 14px;
+        margin-top: -220px;
+        margin-left: 5px;
+    }
+
+    .welcome-con .welcome-pic img{
+        width: 250px;
+        height: 220px;
+        margin-left: 20px;
+        margin-top: 60%;
+        position: relative;
+    }
+
+
+    .vision-con{
+        width: 100%;
+        display: inline-block;
+        margin-bottom: 1100px;
+        position: relative;
+        padding-left: 5%;
+    }
+    .vision-col{
+        width: 100%
+        align-items: center;
+        float: center;
+        /* margin-left: 50px; */
+    }
+
+
+    .footer-col{
+        width: 100%;
+    }
+
+
+    .about-text{
+        width: 280px;
+        margin-top: 914px;
+        margin-left: 50px;
+    }
+    .about-text p{
+        text-align: left;
+        font-size: 13px;
+        line-height: 1.5;
+    }
+    .history-con{
+        width: 90%;
+        height: 910px;
+        margin-left: 20px;
+    }
+    .history-con p{
+        font-size: 14px;
+        line-height: 1.5;
+    }
+
+    /* responsiveness for ids */
+    .bg-image{
+        width: 100%;
+        display: flex;
+        height: 400px;
+        /* overflow-x: hidden; */
+    }
+    .bg-text{
+        position: relative;
+        width: 100%;
+        left: 10000px;
+        top:250px
+    }
+    .bg-text p {
+        font-size: 15px;
+        margin-left: -1200px;
+    }
+    .bg-text a {
+        color: white;
+        font-size: 16px;
+        font-weight: 700;
+        text-align: center;
+        margin-left: -50px;
+    }
+
+    .idsoffer-con{
+        width: 100%;
+        display: flex;
+        flex-flow: row wrap;
+        text-align: center;
+        margin-bottom: 850px;
+        margin-left: 10px;
+    }
+    
+    .idsoffer{
+        margin-top: -500px;
+        margin-left: -100px;
+        width: 150%;
+        display: flex;
+        flex-flow: row wrap;
+        text-align: center;
+    }
+    
+    #col01{
+        margin-top: -539px;
+    }
+    #col02{
+        margin-top: -89px;
+    }
+    #col03{
+        margin-top: 170px;
+    }
+
+    
+    .first-sec img{
+        margin: 50px;
+        width: 156.2%;
+        margin-left: -100px;
+        margin-bottom: 150px;
+    }
+    
+     .idsoffer-col{
+        margin: 80px;
+        width: 52.5%;
+        margin-left: 135px;
+        margin-top: 80px;
+        height: 220px;
+        width: 295px;
+    } 
+
+    .idsoffer-col p{
+        font-size: 14px;
+    }
+
+
+    .code-easy{
+        text-align: center;
+        margin-top: -150px;
+        margin-bottom: 70px;
+    }
+    
+    .code-easy a {
+        font-size: 22px;
+        font-weight: bold;
+    }
+
+
+    .carousel-ids{
+        height: 250px;
+        margin-bottom: 400px;
+    }
+
+
+    /* for icc */
+
+    .iccbg-image{
+        width: 100%;
+        display: flex;
+        height: 400px;
+    }
+
+    .iccbg-text{
+        position: relative;
+        width: 100%;
+        left: 10000px;
+        top:250px
+    }
+    .iccbg-text p {
+        font-size: 15px;
+        margin-left: -1200px;
+    }
+    .iccbg-text a {
+        color: white;
+        font-size: 16px;
+        font-weight: 700;
+        text-align: center;
+        margin-left: -50px;
+    }
+         
+
+    .iccoffer-con{
+        width: 100%;
+        display: flex;
+        flex-flow: row wrap;
+        text-align: center;
+        margin-bottom: 850px;
+        margin-left: 10px;
+    }
+    
+    .iccoffer{
+        margin-top: -500px;
+        margin-left: -100px;
+        width: 1500%;
+        display: flex;
+        flex-flow: row wrap;
+        text-align: center;
+    }
+    
+    #col01{
+        margin-top: -539px;
+        margin-left: 150px;
+    }
+    #col02{
+        margin-top: -89px;
+        margin-left: 150px;
+    }
+    #col03{
+        margin-top: 170px;
+        margin-left: 150px;
+    }
+    
+    .iccfirst-sec img{
+        margin: 50px;
+        width: 166.2%;
+        margin-left: -120px;
+        margin-bottom: 150px;
+    }
+
+    #code-easy02 a{
+        font-size: 18px;
+    }
+
+    #code-easy02{
+        margin-top: -150px;
+    }
+
+    .about-text{
+        width: 280px;
+        margin-top: 914px;
+        margin-left: 50px;
+    }
+    .about-text p{
+        text-align: left;
+        font-size: 13px;
+        line-height: 1.5;
+    }
+    .history-con1{
+        width: 90%;
+        height: 910px;
+        margin-left: 20px;
+    }
+    .history-con1 p{
+        font-size: 14px;
+        line-height: 1.5;
+    }
+    .history-con1 p img{
+        width: 300px;
+    }
+    #about02{
+        margin-top: 914px;
+    }
+
+
+    .carousel-adm{
+        margin-top: 925px;
+        margin-left: 40px;
+        width: 80%;
+        height: 250px;
+    }
+    #history02{
+        height: 920px;
+        width: 100%;
+        margin-left: 0px;
+    }
+
+
+    .history-con2 p img{
+        height: 310px;
+        width: 106%;
+    }
+
+
+    #history03{
+        width: 100%;
+        height: 960px;
+        margin-left: 0px;
+        margin-bottom: 350px;
+    }
+    #history03 p img{
+        width: 100%;
+     }
+     #history03 p{
+         font-size: 15px;
+        width: 96%;
+     }
+     .carousel-teachers{
+        width: 75%;
+        height: 250px;
+        margin-top: 964px;
+        margin-left: 45px;
+    }
+
+
+    #history04{
+        width: 100%;
+        height: 920px;
+        margin-left: 0px;
+        margin-bottom: 350px;
+    }
+    #history04 p img{
+        width: 100%;
+    }
+    #history04 p{
+         font-size: 15px;
+         width: 96%;
+    }
+    .carousel-sport{
+        width: 75%;
+        height: 250px;
+        margin-top: 924px;
+        margin-left: 45px;
+    }
+
+
+    #history05{
+        width: 100%;
+        height: 960px;
+        margin-left: 0px;
+        margin-bottom: 350px;
+    }
+    #history05 p img{
+        width: 100%;
+    }
+    #history05 p{
+         font-size: 15px;
+        width: 96%;
+    }
+    #courasel05{
+        width: 75%;
+        height: 200px;
+        margin-top: 964px;
+        margin-left: 45px;
+    }
+
+
+
+    #history06{
+        width: 100%;
+        height: 1010px;
+        margin-left: 0px;
+        margin-bottom: 350px;
+    }
+    #history06 p img{
+        width: 100%;
+    }
+    #history05 p{
+         font-size: 15px;
+        width: 96%;
+    }
+    #courasel06{
+        width: 75%;
+        height: 200px;
+        margin-top: 1014px;
+        margin-left: 45px;
+    }
+
+
+    .history-con13{
+        width: 100%;
+        height: 1320px;
+        display: flex;
+        flex-flow: row wrap;
+        text-align: center;
+        margin-top: -1300px;
+        margin-bottom: 350px;
+        margin-left: 0px;
+    }
+    #about10{
+        width: 100%;
+        margin-top: 1274px;
+        margin-left: 50px;
+        margin-bottom: 30px;
+    }
+    .history-con13 p{
+        width: 100%;
+        font-size: 15.5px;
+        line-height: 1.5;
+    } 
+    .history-con13 p img{
+        width: 100%;
+    }
+
+
+    .history-con14{
+        background-color: white;
+        width: 100%;
+        height: 1320px;
+        display: flex;
+        flex-flow: row wrap;
+        text-align: center;
+        margin-top: -1300px;
+        margin-bottom: 350px;
+        margin-left: 0px;
+    }
+    #about11{
+        width: 100%;
+        margin-top: 1274px;
+        margin-left: 50px;
+        margin-bottom: 30px;
+    }
+    .history-con14 p{
+        width: 100%;
+        font-size: 15.5px;
+        line-height: 1.5;
+    } 
+    .history-con14 p img{
+        width: 100%;
+    }
+
+
+
+    .history-con5{
+        background-color: white;
+        width: 100%;
+        height: 1070px;
+        display: flex;
+        flex-flow: row wrap;
+        text-align: center;
+        margin-top: -1250px;
+        margin-bottom: 350px;
+        margin-left: 0px;
+    }
+    #about11{
+        width: 100%;
+        margin-top: 1319px;
+        margin-left: 50px;
+        margin-bottom: 30px;
+    }
+    .history-con5 p{
+        width: 100%;
+        font-size: 15.5px;
+        line-height: 1.5;
+    } 
+    .history-con5 p img{
+        width: 100%;
+    }
+    .history-con5 #ict10 img{
+        width: 45%;
+        left: 50px;
+        margin-left: 10px;
+    }
+    #about12{
+        margin-top: 1074px;
+        margin-left: 50px;
+    }
+    .history-con5 .ictimages img{
+        width: 40%;
+        margin-left: 10px;
+    }
+    #about13{
+        margin-top: 1074px;
+        margin-left: 50px;
+    }
+    #about14{
+        margin-top: 1074px;
+        margin-left: 50px;
+    }
+}
+
+
+
+
+@media screen and (max-width: 350px) {
+    .founder-con img{
+        width: 100%;
+        height: 336px;
+    }
+    .founder-con{
+        width: fit-content;
+        display: grid;
+        grid-template-columns: auto auto ;
+        /* width: 340px; */
+        margin: auto auto;
+        column-gap: 0;
+    }
+    .founder-text1{
+        width: 210px;
+        height: 340px;
+    }
+    .founder-text1 a{
+        font-size: 8px;
+
+    }
+
+
+    .we-offer a{
+        font-size: 18px;
+    }
+
+    .our-offer{
+        display: block;
+        width: 300px;
+    }
+     .offer-text{
+         width: fit-content;
+         display: list-item;
+         margin-bottom: 100px;
+    }
+    #lv01{
+        width: fit-content;
+         position: static;
+         margin-top: -1315px;
+         margin-left: 20px;
+         /* border-bottom: 1px solid black */
+    }
+    #sv01{
+         margin-left: 10px;
+    }
+ 
+    #sv02{
+         margin-top: 300px;
+         margin-left: 10px;
+    }
+     #lv02{
+         width: fit-content;
+         margin-top: -810px;
+         margin-left: 20px; 
+         /* border-bottom: 1px solid black */
+    }
+ 
+    #sv03{
+         margin: 300px;
+         margin-left: 30px;
+    }
+    #lv03{
+        width: fit-content;
+         margin-top: -305px;
+         margin-left: 20px;
+         align-items: center;
+         /* border-bottom: 1px solid black */
+    } 
+
+
+    .welcome-con{
+        width: fit-content;
+        margin-top: -100px;
+    }
+
+    .welcome-text{
+        width: 100%;
+        font-size: 13px;
+        margin-top: -220px;
+        margin-left: 5px;
+    }
+
+    .welcome-con .welcome-pic img{
+        width: 250px;
+        height: 220px;
+        margin-left: 20px;
+        margin-top: 110%;
+        position: relative;
+    }
+
+
+    .vision-con{
+        width: 100%;
+        display: inline-block;
+        margin-bottom: 1100px;
+        position: relative;
+        padding-left: 2%;
+    }
+    .vision-col{
+        width: 100%
+        align-items: center;
+        float: center;
+        /* margin-left: 50px; */
+    }
+
+    .vision-col p{
+        width: 100%;
+        font-size: 14px;
+    }
+
+
+    .footer-col{
+        width: 100%;
+    }
+
+
+    .about-text{
+        width: 280px;
+        margin-top: 914px;
+        margin-left: 50px;
+    }
+    .about-text p{
+        text-align: left;
+        font-size: 13px;
+        line-height: 1.5;
+    }
+    .history-con{
+        width: 90%;
+        height: 910px;
+        margin-left: 20px;
+    }
+    .history-con p{
+        font-size: 14px;
+        line-height: 1.5;
+    }
+
+    /* responsiveness for ids */
+    .bg-image{
+        width: 100%;
+        display: flex;
+        height: 400px;
+    }
+    .bg-text{
+        position: relative;
+        width: 100%;
+        left: 10000px;
+        top:250px
+    }
+    .bg-text p {
+        font-size: 15px;
+        margin-left: -1200px;
+    }
+    .bg-text a {
+        color: white;
+        font-size: 16px;
+        font-weight: 700;
+        text-align: center;
+        margin-left: -50px;
+    }
+
+    .idsoffer-con{
+        width: 100%;
+        display: flex;
+        flex-flow: row wrap;
+        text-align: center;
+        margin-bottom: 850px;
+        margin-left: 10px;
+    }
+    
+    .idsoffer{
+        margin-top: -500px;
+        margin-left: -100px;
+        width: 150%;
+        display: flex;
+        flex-flow: row wrap;
+        text-align: center;
+    }
+    
+    #col01{
+        margin-top: -539px;
+    }
+    #col02{
+        margin-top: -89px;
+    }
+    #col03{
+        margin-top: 170px;
+    }
+
+    
+    .first-sec img{
+        margin: 50px;
+        width: 156.2%;
+        margin-left: -100px;
+        margin-bottom: 150px;
+    }
+    
+     .idsoffer-col{
+        margin: 80px;
+        width: 52.5%;
+        margin-left: 135px;
+        margin-top: 80px;
+        height: 220px;
+        width: 295px;
+    } 
+
+    .idsoffer-col p{
+        font-size: 14px;
+    }
+
+
+    .code-easy{
+        text-align: center;
+        margin-top: -150px;
+        margin-bottom: 70px;
+    }
+    
+    .code-easy a {
+        font-size: 22px;
+        font-weight: bold;
+    }
+
+
+    .carousel-ids{
+        height: 250px;
+        margin-bottom: 400px;
+    }
+
+
+    /* for icc */
+
+    .iccbg-image{
+        width: 100%;
+        display: flex;
+        height: 400px;
+    }
+
+    .iccbg-text{
+        position: relative;
+        width: 100%;
+        left: 10000px;
+        top:250px
+    }
+    .iccbg-text p {
+        font-size: 15px;
+        margin-left: -1200px;
+    }
+    .iccbg-text a {
+        color: white;
+        font-size: 16px;
+        font-weight: 700;
+        text-align: center;
+        margin-left: -50px;
+    }
+         
+
+    .iccoffer-con{
+        width: 100%;
+        display: flex;
+        flex-flow: row wrap;
+        text-align: center;
+        margin-bottom: 850px;
+        margin-left: 10px;
+    }
+    
+    .iccoffer{
+        margin-top: -500px;
+        margin-left: -100px;
+        width: 1500%;
+        display: flex;
+        flex-flow: row wrap;
+        text-align: center;
+    }
+    
+    #col01{
+        margin-top: -539px;
+        margin-left: 150px;
+    }
+    #col02{
+        margin-top: -89px;
+        margin-left: 150px;
+    }
+    #col03{
+        margin-top: 170px;
+        margin-left: 150px;
+    }
+    
+    .iccfirst-sec img{
+        margin: 50px;
+        width: 166.2%;
+        margin-left: -120px;
+        margin-bottom: 150px;
+    }
+
+    #code-easy02 a{
+        font-size: 18px;
+    }
+
+    #code-easy02{
+        margin-top: -150px;
+    }
+
+    .about-text{
+        width: 280px;
+        margin-top: 914px;
+        margin-left: 50px;
+    }
+    .about-text p{
+        text-align: left;
+        font-size: 13px;
+        line-height: 1.5;
+    }
+    .history-con1{
+        width: 90%;
+        height: 910px;
+        margin-left: 20px;
+    }
+    .history-con1 p{
+        font-size: 14px;
+        line-height: 1.5;
+    }
+    .history-con1 p img{
+        width: 300px;
+    }
+    #about02{
+        margin-top: 914px;
+    }
+
+
+    .carousel-adm{
+        margin-top: 925px;
+        margin-left: 40px;
+        width: 80%;
+        height: 250px;
+    }
+    #history02{
+        height: 920px;
+        width: 100%;
+        margin-left: 0px;
+    }
+
+
+    .history-con2 p img{
+        height: 310px;
+        width: 106%;
+    }
+
+
+    #history03{
+        width: 100%;
+        height: 960px;
+        margin-left: 0px;
+        margin-bottom: 350px;
+    }
+    #history03 p img{
+        width: 100%;
+     }
+     #history03 p{
+         font-size: 15px;
+        width: 96%;
+     }
+     .carousel-teachers{
+        width: 75%;
+        height: 250px;
+        margin-top: 964px;
+        margin-left: 45px;
+    }
+
+
+    #history04{
+        width: 100%;
+        height: 920px;
+        margin-left: 0px;
+        margin-bottom: 350px;
+    }
+    #history04 p img{
+        width: 100%;
+     }
+     #history04 p{
+         font-size: 15px;
+         width: 96%;
+     }
+     .carousel-sport{
+        width: 75%;
+        height: 250px;
+        margin-top: 924px;
+        margin-left: 45px;
+    }
+
+
+    #history05{
+        width: 100%;
+        height: 960px;
+        margin-left: 0px;
+        margin-bottom: 350px;
+    }
+    #history05 p img{
+        width: 100%;
+     }
+     #history05 p{
+         font-size: 15px;
+        width: 96%;
+     }
+     #courasel05{
+        width: 75%;
+        height: 200px;
+        margin-top: 964px;
+        margin-left: 45px;
+    }
+
+
+
+    #history06{
+        width: 100%;
+        height: 1010px;
+        margin-left: 0px;
+        margin-bottom: 350px;
+    }
+    #history06 p img{
+        width: 100%;
+     }
+     #history05 p{
+         font-size: 15px;
+        width: 96%;
+     }
+     #courasel06{
+        width: 75%;
+        height: 200px;
+        margin-top: 1014px;
+        margin-left: 45px;
+    }
+
+
+    .history-con13{
+        width: 100%;
+        height: 1320px;
+        display: flex;
+        flex-flow: row wrap;
+        text-align: center;
+        margin-top: -1300px;
+        margin-bottom: 350px;
+        margin-left: 0px;
+    }
+    #about10{
+        width: 100%;
+        margin-top: 1274px;
+        margin-left: 50px;
+        margin-bottom: 30px;
+    }
+    .history-con13 p{
+        width: 100%;
+        font-size: 15.5px;
+        line-height: 1.5;
+    } 
+    .history-con13 p img{
+        width: 100%;
+    }
+
+
+    .history-con14{
+        background-color: white;
+        width: 100%;
+        height: 1320px;
+        display: flex;
+        flex-flow: row wrap;
+        text-align: center;
+        margin-top: -1300px;
+        margin-bottom: 350px;
+        margin-left: 0px;
+    }
+    #about11{
+        width: 100%;
+        margin-top: 1274px;
+        margin-left: 50px;
+        margin-bottom: 30px;
+    }
+    .history-con14 p{
+        width: 100%;
+        font-size: 15.5px;
+        line-height: 1.5;
+    } 
+    .history-con14 p img{
+        width: 100%;
+    }
+
+
+
+    .history-con5{
+        background-color: white;
+        width: 100%;
+        height: 1070px;
+        display: flex;
+        flex-flow: row wrap;
+        text-align: center;
+        margin-top: -1250px;
+        margin-bottom: 350px;
+        margin-left: 0px;
+    }
+    #about11{
+        width: 100%;
+        margin-top: 1319px;
+        margin-left: 50px;
+        margin-bottom: 30px;
+    }
+    .history-con5 p{
+        width: 100%;
+        font-size: 15.5px;
+        line-height: 1.5;
+    } 
+    .history-con5 p img{
+        width: 100%;
+    }
+    .history-con5 #ict10 img{
+        width: 45%;
+        left: 50px;
+        margin-left: 10px;
+    }
+    #about12{
+        margin-top: 1074px;
+        margin-left: 50px;
+    }
+    .history-con5 .ictimages img{
+        width: 40%;
+        margin-left: 10px;
+    }
+    #about13{
+        margin-top: 1074px;
+        margin-left: 50px;
+    }
+    #about14{
+        margin-top: 1074px;
+        margin-left: 50px;
+    }
+
+}
